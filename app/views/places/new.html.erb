@@ -1,7 +1,13 @@
 <%= form_with :model => @place do |form| %>
   <p>
-    <%= form.label "name", "Place Name" %>
+    <%= form.label "name" %>
     <%= form.text_field "name" %>
   </p>
+   <!--p>
+    <%= form.label "created_at" %>
+    <%= form.date_field "created_at" %>
+    <%= form.label "updated_at" %>
+    <%= form.date_field "updated_at" %>
+  </p-->
   <%= form.submit %>
 <% end %>
